@@ -28,9 +28,10 @@ const urlRequest = async (url) => {
 }
 
 async function fetchLocalCoordinate(localName)  {
-    let localNameThreated = localName.replace(/ +/g, '+')
+    let localNameThreated = localName.replace(/ +/g, ',')
     const url = baseGeoURL + "?name=" + localNameThreated + "&count=5&language=pt&format=json"
     const data = await urlRequest(url);
+    console.log(url)
     return data.results
 }
 
