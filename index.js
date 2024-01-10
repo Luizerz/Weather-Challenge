@@ -46,6 +46,7 @@ async function fetchLocalClimate(obj) {
 const btnClick = async (localName) => {
     const localObj = await fetchLocalCoordinate(localName);
     localObj != undefined ? await fetchLocalClimate(localObj[0]) : console.log("Local Nao Encontrado");
+    searchBarElement.value = "";
 }
 
 const createCardComponent= (name, forecast) => {
