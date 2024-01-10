@@ -16,8 +16,12 @@
 body {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(-32.5deg, var(--clr-1), var(--clr-4), var(--clr-5),var(--clr-3));
+    background-image: url('../bg.jpg');
+    /* background: linear-gradient(-32.5deg, var(--clr-1), var(--clr-4), var(--clr-5),var(--clr-3)); */
     /* background-color: var(--clr-5); */
+   background-size: cover;
+   background-position: center;
+   backdrop-filter: blur(4px);
 }
 
 header {
@@ -135,14 +139,14 @@ main h2 {
     background-color: var(--clr-5);
     transition: all .5s ease;
     text-align: center;
-    box-shadow: 0px 0px 10px var(--clr-2);
+    box-shadow: 0px 3px 2px var(--clr-2);
     transform-origin: center;
 }
 
 #search-button:hover {
     background-color: var(--clr-3);
     font-size: 25px;
-    border-radius: 40%;
+    border-radius: 50%;
     padding: 1.5%;
     box-shadow: 0px 0px 2px var(--clr-2);
 }
