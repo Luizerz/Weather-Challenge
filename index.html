@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Climate</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Climate</h1>
+            <span class="hand-shake">🤝</span>
+        </div>
+        <h2>
+            O amigo que ajuda voce a nao se molhar<span> 💧<span>
+        </h2>
+    </header>
+
+    <main>
+        <h2>Vamos ver o tempo por ai?</h2>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Ex: Cidade, Pais" spellcheck="true">
+            <button id="search-button" type="submit" onclick="getValue()">🔍</button>
+        </div>
+        <div id="response" class="hidden response-container">
+                <h3 class="response-title"></h3>
+                <h3 class="forecast"></h3>
+            <p></p>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
